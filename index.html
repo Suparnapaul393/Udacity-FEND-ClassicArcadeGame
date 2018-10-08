@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+</head>
+<body>
+    <div id="screen-view" class="flex center">
+        <section id="play-interface">
+            <div id="title" class="flex">
+                <p id="target" class="title-sub-box">Target: 1000</p>
+                <p class="title-sub-box" id = "instruction-btn">see instructions ></p>
+            </div>
+            <div id="score-bar" class="flex">
+                <div id = "life" class="flex">
+                    <img class="icon" src="./images/Heart.png" alt="life">
+                    <span id="life-count">5</span>
+                </div>
+                <div id="star" class="flex">
+                    <img class="icon" src="./images/Star.png" alt="star">
+                    <span id="star-count">0</span>
+                </div>
+                <p id="score">score: <span id="score-count">0</span></p>
+            </div>
+            <div id="control-panel">
+                <button class="control-btn" id="start">start</button>
+                <button class="control-btn" id="pause">pause</button>
+            </div>
+        </section>
+        <section id="instruction" class="hide-box">
+            <div id="instruction-note">
+                <h3 class="instru-title">Game Rules</h3>
+                <h4 class="instru-subtitle">Target: </h4>
+                <p class="note">Reach 1000 points to win!</p>
+                <h4 class="instru-subtitle">Score Rules:</h4>
+                <ul class="note">
+                    <li>Reach water: +50 pts</li>
+                    <li>Catch a star: +100 pts</li>
+                </ul>
+                <h4 class="instru-subtitle">Life Rules:</h4>
+                <p class="note">If hit by a bug, lose 1 life. You have a maximum of 5 lives.</p>
+                <h3 class="instru-title">Operation</h3>
+                <h4 class="instru-subtitle">Start/restart: </h4>
+                <p class="note">Click Start/Restart button or press "Enter" Key.</p>
+                <h4 class="instru-subtitle">Pause/continue: </h4>
+                <p class="note">Click Pause/Continue button or press "space" Key.</p>
+                <h4 class="instru-subtitle">Player: </h4>
+                <p class="note">Use the keyboard arrows to move the player.</p>
+                <!--source: http://www.101computing.net/wp/wp-content/uploads/arrowKeys.png -->
+                <img src="images/arrowKeys.png" alt="arrow keys" class="arrow-image">
+            </div>
+        </section>
+    </div>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+body {
+    text-align: center;
+    font-size: 30px;
+    font-family: Anton, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    max-width: 100%;
+}
+
+.center {
+    justify-content:center;
+}
+
+#play-interface {
+    width: 585px;
+    max-width: 100%;
+    background-color: lightgray;
+}
+
+#title,
+#score-bar {
+    padding: 0 40px;
+}
+
+#title {
+    border-bottom: 1px solid white;
+    background-color: darkgray;
+    color: white;
+}
+
+.title-sub-box {
+    width: 50%;
+    margin: 20px 0;
+}
+
+#target {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#instruction-btn {
+    text-align: right;
+    color: rgb(50,50,50);
+    font-size: 22px;
+    margin-top: 25px;
+    text-transform: capitalize;
+}
+
+#instruction-btn:hover,
+#instruction-btn:focus
+ {
+    color: gold;
+    transition: 0.2s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.icon {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#life,
+#star {
+    width: 25%;
+    align-items:center;
+}
+
+#score {
+    width: 50%;
+    text-align: right;
+}
+
+.icon {
+    width: 50.5px;
+    height: 85.5px;
+}
+
+canvas {
+    margin-top: -50px;
+}
+
+.control-btn {
+    width: 200px;
+    height: 70px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.control-btn:hover {
+    cursor: pointer;
+}
+
+.control-btn:focus {
+    outline: none;
+}
+
+#instruction {
+    margin-left: 3px;
+}
+
+.hide-box {
+    display: none;
+}
+
+#instruction-note {
+    background-color: rgb(238,232,170);
+    font-size: 18px;
+    font-family: arial;
+    padding: 10px 10% 10% 10%;
+    text-align: left;
+    width:  300px;
+}
+
+.instru-title {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    font-size: 22px;
+    color: Coral;
+    text-shadow: 1px 1px white;
+}
+
+.instru-subtitle {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 22px;
+}
+
+.arrow-image {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 10px
+}
+
+.note {
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
